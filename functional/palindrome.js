@@ -14,10 +14,6 @@ function isPalindromeWithReverse(value) {
     }
 }
 
-const word = isPalindromeWithReverse("buku")
-console.log(word)
-
-
 /**
  * Determine whether the given value is a palindrome or not.
 *
@@ -28,23 +24,25 @@ function isPalindromeWithLoop(value) {
     let vlength = value.length
     let ow = []
     let nw = []
-
+    
     for(let i=0; i<vlength; i++) {
         ow.push(value[i])
     }
+    
     for(let j=vlength-1; j>=0; j--) {
         nw.push(value[j])
     }
-
+    
     if (JSON.stringify(ow) == JSON.stringify(nw)) {
-        // console.log(JSON.stringify(ow))
         return `The word "${ow.join('')}" is PALINDROME`
     } 
     else {
-        // console.log(JSON.stringify(nw))
         return `The word "${ow.join('')}" is NOT PALINDROME`
     }
 }
+
+const word = isPalindromeWithReverse("buku")
+console.log(word)
 
 const word2 = isPalindromeWithLoop("malam")
 console.log(word2)
