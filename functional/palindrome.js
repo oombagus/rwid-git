@@ -7,10 +7,10 @@ function isPalindromeWithReverse(value) {
     // write your code here using reverse way
     let nvalue = value.split("").reverse().join("");
     if (value == nvalue) {
-        return `The word "${value}" is Palindrome`
+        return `The word "${value}" is palindrome`
         // return nvalue
     } else {
-        return `The word "${value}" is NOT Palindrome`
+        return `The word "${value}" is NOT palindrome`
     }
 }
 
@@ -34,10 +34,10 @@ function isPalindromeWithLoop(value) {
     }
     
     if (JSON.stringify(ow) == JSON.stringify(nw)) {
-        return `The word "${ow.join('')}" is PALINDROME`
+        return `The word "${value}" is palindrome`
     } 
     else {
-        return `The word "${ow.join('')}" is NOT PALINDROME`
+        return `The word "${value}" is NOT palindrome`
     }
 }
 
